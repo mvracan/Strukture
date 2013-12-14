@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+struct pacijent{
+       char ime[50],prezime[50],datum[15],spol;
+       int ai,bi,ci,di,ei;
+       };
+       
+struct red{
+       pacijent pacijenti[1000];
+       int front,rear;
+       };
+
+
+int AddOne(int n){
+    return (n+1)%1000;
+    }
+ 
+red *InitQ(red *q){
+     q = new red;
+     q->front = 0;
+     q->rear = 999;
+     return q;
+     }
+
+bool IsEmptyQ(red *q){
+     return AddOne(q->rear)==q->front;
+     }
+
+pacijent FrontQ(red *q){
+        return q->pacijenti[q->front];
+        }
+        
+
+void EnQueueQ(pacijent x,red *q){
+     int i=AddOne(q->rear);
+     q->pacijenti[i]=x;
+     q->rear = i;
+     }
+     
+void DeQueueQ(red *q){
+     int i=AddOne(q->front);
+     q->front = i;
+     }
