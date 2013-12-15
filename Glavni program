@@ -108,7 +108,7 @@ void simuliraj(pacijent polje[],int broj){
             if(ordinacija.ci==1) cout << ", Hitni slucaj";
             else if(ordinacija.ci==2) cout << ", Invalid";
             else if(ordinacija.ci==3) cout << ", Trudnica";
-            else if(ordinacija.ci==4) cout << ", Dijeca";
+            else if(ordinacija.ci==4) cout << ", Dijete";
             else cout << ", Ostali pacijent";
             cout << ", Preostalo vrijeme: " << bi << endl << endl;
             cout << "CEKAONICA: nema pacijenata" << endl;
@@ -210,7 +210,7 @@ void drugi(red *q){
                           if(p.ci==1) cout << "Hitni slucaj" << endl;
                           else if(p.ci==2) cout << "Invalid" << endl;
                           else if(p.ci==3) cout << "Trudnica" << endl;
-                          else if(p.ci==4) cout << "Dijeca" << endl;
+                          else if(p.ci==4) cout << "Dijete" << endl;
                           else cout << "Ostali pacijent" << endl;
                           if(p.di==1) cout << "Pregled" << endl;
                           else if(p.di==2) cout << "Previjanje" << endl;
@@ -264,7 +264,7 @@ void ispis(red *q){
         if(p.ci==1) cout << "Hitni slucaj" << endl;
         else if(p.ci==2) cout << "Invalid" << endl;
         else if(p.ci==3) cout << "Trudnica" << endl;
-        else if(p.ci==4) cout << "Dijeca" << endl;
+        else if(p.ci==4) cout << "Dijete" << endl;
         else cout << "Ostali pacijent" << endl;
         if(p.di==1) cout << "Pregled" << endl;
         else if(p.di==2) cout << "Previjanje" << endl;
