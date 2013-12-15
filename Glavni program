@@ -76,7 +76,7 @@ void simuliraj(pacijent polje[],int broj){
                                 if(ordinacija.ci==1) cout << ", Hitni slucaj";
                                 else if(ordinacija.ci==2) cout << ", Invalid";
                                 else if(ordinacija.ci==3) cout << ", Trudnica";
-                                else if(ordinacija.ci==4) cout << ", Dijeca";
+                                else if(ordinacija.ci==4) cout << ", Dijete";
                                 else cout << ", Ostali pacijent";
                                 cout << ", Preostalo vrijeme: " << bi << endl << endl;
                                 }
@@ -301,8 +301,6 @@ void treci(red *q){
      
      if(c-->k  || p.di>=3) EnQueueQ(p,n);
      else EnQueueQ(p,q);
-     cout << p.ime << " " << p.prezime << endl << endl;
-     cout << c << " " << k << endl;
      }
 
 int main(){
